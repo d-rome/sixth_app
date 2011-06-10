@@ -1,14 +1,184 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
+
 <head>
-  <title>SixthApp</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>Chris McGarry</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="colorbox.css" type="text/css" media="screen" />
+	
+	<!--[if lte IE 8]> 
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->  
+    
+    <script type="text/javascript" src="http://use.typekit.com/zhx4guq.js"></script>
+
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="js/soundmanager2.js"></script>
+    <script type="text/javascript" src="js/inlineplayer.js"></script>
+    <script type="text/javascript" src="js/jScrollPane.js"></script>
+
+    <script type="text/javascript" src="js/mcgarry.js"></script>
 </head>
+
 <body>
 
-<%= yield %>
+	<header id="header-target">
+	    &nbsp;
+	    <div class="inside">
+    		<h1><a class="home-link" href="#home">Chris McGarry</a></h1>
+    		<h2><a class="about-link" href="#about">New Album: And the Weary Eyes Reply</a></h2>
 
+        </div>
+	</header>
+	
+	<div class="inside wrap">
+	
+    	<section id="upcoming">
+            <h2>Upcoming Shows</h2>
+            <ul id="show-target"></ul>
+            <a href="#shows" class="shows-link">More...</a>
+    	</section>
+
+    	
+    	<section id="sample">
+            <h2>Sample Tracks</h2>
+            <ul>
+              <li><a class="sm2_link" href="/mp3s/TearMeDown.mp3"> Tear Me Down</a></li>
+              <li><a class="sm2_link" href="/mp3s/SoberLovebird.mp3"> Sober Lovebird</a></li>
+              <li><a class="sm2_link" href="/mp3s/BrooklynBound.mp3"> This Heathen City</a></li>
+
+            </ul>
+    	</section>
+    	
+    	<section id="pdfs">
+    	   <h2>PDFs</h2>
+    	   <ul>
+    	       <li><a href="/docs/McGarry-8x10.pdf">8 x 10</a></li>
+    	       <li><a href="/docs/McGarry-OneSheet.pdf">One Sheet</a></li>
+
+    	   </ul>
+    	</section>
+    	
+    	<section id="bio">
+            <h2>Biography</h2>
+            
+            <p>Born on the Mississippi River and raised on Methodist hymns, folk ballads 
+            and vintage country, learning to play was a necessity for Chris McGarry. 
+            After simultaneously picking up a guitar and an obsession with Walt Whitman, 
+            creating his own songs became only inevitable.</p>
+            
+            <p>Residing in Denver’s Capitol Hill, McGarry is part of the new breed of 
+            old-time musicians who live in trendy neighborhoods while mining the internet 
+            for inspiration found in the form of depression-era 78’s transferred to mp3 
+            format. Yet, despite his relocation to an urban environment, his immersion 
+            into modern amenities and a post-beatnik lyrical style, McGarry’s musical 
+            roots remain sedentary; melodies as haunted as the river bluffs and a voice 
+            as gravelly as the silt laden shores he wandered as a child</p>            
+    	</section>
+    	
+    	<section id="about">
+
+    	     
+    	      <img src="/images/album-promo.png" width="410" height="198" border="0" usemap="#Map" />
+            <map name="Map" id="Map">
+              <area shape="rect" coords="231,149,277,196" href="http://itunes.apple.com/us/album/and-the-weary-eyes-reply/id371196035" />
+              <area shape="rect" coords="283,147,403,197" href="http://www.cdbaby.com/cd/ChrisMcGarry" />
+            </map>
+            
+            <br /><br />
+            
+            <p>Album also available at Denver-area local record stores: Wax Trax Records and 
+            Twist and Shout Records.</p>
+                        
+            <p>Imagine, if you will, that you are a bottle of whiskey-rye. You are down to 
+            your last drops of sweet Tennessee life, and that relentless cowboy whose got 
+            you by the neck shows no sign of slowing his drinkin' pace.</p>
+
+            <p>Soon, as a bottle of whiskey, you will be gone; a forgetful part of a 
+            heartbroken cowboy's past, and just as he has done to so many of your bottled 
+            brethren before, he is going to toss you in a ditch to be forgotten and 
+            most likely pick up another bottle. You will left there, an empty shell 
+            of your former self, a littered soul on the side of the cowboy's road 
+            on which he is Brooklyn bound.</p>
+
+            <p>Setting up this image of low-down despair is imperative to understanding 
+            the ambiance of And the Weary Eyes Reply, the debut album from Chris McGarry. 
+            For the album, McGarry plays the role of a downtrodden but soulful drifter, 
+            musing his way through nine powerful tracks of existential pondering and 
+            superb blues-based country arrangements. Not twelve seconds into 
+            "This Heathen City" McGarry has already accused the sun of heresy 
+            (for interrupting the practices of the night); and throughout the 
+            vaudevillian-inspired, self-loathing anthem "Tear Me Down" Chris battles 
+            with the concept of being torn apart (physically or mentally?) only to be 
+            made "into something I never been before."</p> 
+
+            <p>Throughout the lyrically-rich And the Weary Eyes Reply, McGarry 
+            reestablishes the lost art of story-songs. Each vignette of music offers 
+            its own tale, and the album paints a portrait of Americana through classic 
+            instrumentation (driving banjos, warm acoustic guitars), inventive melodies, 
+            and McGarry's vocals that bend like the road and possess just enough of that 
+            old-soul "twang" to implore you to check the copyright date on his album.</p>  
+            
+            <h2>Album Reviews</h2>  
+            
+            <ul>
+                <li><a href="http://www.westword.com/2010-06-03/music/chris-mcgarry/"><span>&rarr;</span> Denver Westword</a></li>
+
+                <li><a href="http://www.speakersincode.com/2010/05/jam-of-day-chris-mcgarry-brooklyn-bound.html"><span>&rarr;</span> Speakers in Code</a></li>
+                <li><a href="http://rockymountainmusicnetwork.wordpress.com/2010/06/14/mmmm-monday-june-14-2010/"><span>&rarr;</span> Colorado Music &amp; Code</a></li>
+            </ul>
+        </section>
+    	
+    	<section id="shows">
+            <h2>Upcoming Shows</h2>
+
+            
+            <div class="cms-editable" id="pagelime-showdata">Chris McGarry and The Insomniacs will be taking a short break to write and record our upcoming 5 song EP.</div> 
+        </section>
+        
+    	<section id="contact">
+            <h2>Contact</h2>
+            
+            <iframe height="514" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://chriscoyier.wufoo.com/embed/r7p3r7/"><a href="https://chriscoyier.wufoo.com/forms/r7p3r7/" title="Contact Chris McGarry" rel="nofollow">Fill out my Wufoo form!</a></iframe>  
+        </section>
+        
+        <section id="photos">
+            <h2>Photos</h2>
+
+            
+            <a href="/pictures/1.jpg" rel="gary-photo"><img src="/pictures/1-thumb.jpg" alt="" /></a>
+        </section>
+	</div>
+
+	<footer>
+	    <div class="inside">
+    	    <img src="images/McGarry.png" alt="" id="mcgarry" />
+    		<nav>
+    			<ul class="typekit-main">
+    				<li><a class="home-link current" href="#home">Home</a></li>
+    				<li><a class="shows-link" href="#shows">Shows</a></li>
+
+    				<li><a id="nav-bio" href="#bio">Biography</a></li>
+    				<li><a class="about-link" id="nav-about" href="#about">The Album</a></li>
+    				<li><a id="nav-photos" href="#photos">Photos</a></li>
+    				<li><a id="nav-contact" href="#contact">Contact</a></li>
+    				<li><a style="margin-right: 1px;" href="http://twitter.com/c_mcgarry"><img src="images/twitter_16.png" alt="Twitter" /></a></li>
+    				<li><a style="margin-right: 1px;" href="http://myspace.com/chrismcgarry"><img src="images/myspace_16.png" alt="MySpace" /></a></li>
+    				<li><a style="margin-right: 1px;" href="http://www.facebook.com/chrismcgarrymusic"><img src="images/facebook_16.png" alt="MySpace" /></a></li>
+
+    			</ul>
+    		</nav>
+        </div>
+	</footer>
+	
 </body>
+
 </html>

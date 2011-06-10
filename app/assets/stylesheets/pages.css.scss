@@ -1,0 +1,344 @@
+/* 
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+  You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    color: #C4C4C4;
+    font: 11px/1.4 Georgia,Serif;
+    height: 100%;
+}
+html {
+    background: url("images/texture.jpg") repeat scroll 0 0 transparent;
+}
+body {
+    background: url("images/bg.jpg") no-repeat scroll center top transparent;
+}
+header, section, footer, aside, nav, article, figure {
+    display: block;
+}
+.inside {
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    width: 760px;
+}
+a {
+    color: white;
+    outline: 0 none;
+    text-decoration: none;
+}
+a img {
+    border: 0 none;
+}
+p {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 0 10px;
+    padding: 8px;
+}
+h1, h2, h3, h4, h5 {
+    margin: 0 0 10px;
+}
+h2 {
+    color: #211F1E;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-shadow: 0 1px #736D69;
+    text-transform: uppercase;
+}
+h3 {
+    color: white;
+    font-size: 24px;
+}
+header, footer {
+    width: 100%;
+}
+header {
+    background: url("images/header-bg.png") repeat-x scroll 0 0 transparent;
+    height: 150px;
+    position: relative;
+    top: 70px;
+}
+footer {
+    background: url("images/footer-bg.png") repeat-x scroll 0 0 transparent;
+    height: 78px;
+}
+.wrap {
+    height: 390px;
+}
+header h1, header h2 {
+    margin: 0;
+}
+header h1 a, header h2 a {
+    z-index: 40;
+}
+header h1 a {
+    background: url("images/logo.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 54px;
+    left: 20px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 33px;
+    width: 240px;
+}
+header h2 a {
+    background: url("images/newalbum.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 128px;
+    position: absolute;
+    right: 0;
+    text-indent: -9999px;
+    top: -2px;
+    width: 259px;
+}
+#bio, #about, #contact, #photos, #shows, #pdfs {
+    display: none;
+    height: 100%;
+    left: 20px;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    width: 425px;
+}
+#upcoming {
+    left: 20px;
+    position: absolute;
+    top: 70px;
+    width: 210px;
+    z-index: 30;
+}
+#upcoming ul {
+    list-style: none outside none;
+}
+#upcoming ul li {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    margin: 0 0 3px;
+    padding: 5px;
+    position: relative;
+}
+#upcoming ul li .date {
+    color: white;
+    display: block;
+    font-weight: bold;
+}
+#upcoming ul li .time {
+    display: none;
+}
+#upcoming ul li .city {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+#sample {
+    left: 541px;
+    position: absolute;
+    top: 70px;
+    width: 180px;
+    z-index: 30;
+}
+#sample ul, #pdfs ul {
+    list-style: none outside none;
+}
+#sample ul li, #pdfs ul li {
+    margin: 0 0 3px;
+}
+#sample ul li a, #pdfs ul li a {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("images/play.png");
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    border-radius: 8px 8px 8px 8px;
+    color: white;
+    display: block;
+    height: 16px;
+    margin: 0 6px 0 0;
+    padding: 3px 3px 3px 25px;
+    vertical-align: middle;
+}
+#sample ul li a:hover, #pdfs ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.698);
+}
+.sm2_paused {
+    background-image: url("images/pause.png") !important;
+    background-repeat: no-repeat;
+}
+.sm2_playing {
+    background-color: rgba(0, 0, 0, 0.898) !important;
+}
+#pdfs {
+    left: 500px;
+    width: 125px;
+}
+#pdfs ul li a {
+    background-image: url("/images/icon_pdf.png");
+}
+#bio p, #about p {
+    font-size: 14px;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.698);
+}
+#about {
+    display: block;
+}
+#about ul {
+    list-style: none outside none;
+    padding: 0 0 80px;
+}
+#about ul li {
+    margin: 0 0 3px;
+}
+#about ul li a {
+}
+#about ul li a:hover {
+    padding-left: 10px;
+}
+#about ul li a:hover span {
+    color: #D05353;
+}
+#about h2 {
+    text-align: left;
+}
+#contact {
+    overflow: hidden;
+}
+#photos {
+    left: 385px;
+    top: -500px;
+}
+#photos a {
+    opacity: 0.75;
+}
+#photos a img {
+    border: 0 none;
+    float: left;
+    margin: 0 5px 5px 0;
+}
+#photos a:hover {
+    opacity: 1;
+}
+#shows li {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    border-radius: 12px 12px 12px 12px;
+    font-size: 14px;
+    margin: 0 0 5px;
+    padding: 6px;
+}
+#shows li .date {
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    width: 110px;
+}
+#shows li .time {
+    display: inline-block;
+    width: 60px;
+}
+#shows li .city {
+    display: inline-block;
+    text-align: right;
+    width: 220px;
+}
+#shows li .venue {
+    display: block;
+}
+#mcgarry {
+    bottom: 35px;
+    left: 110px;
+    position: absolute;
+    z-index: 0;
+}
+footer {
+    z-index: 20;
+}
+footer nav {
+    padding: 30px 0 0;
+}
+footer nav ul {
+    list-style: none outside none;
+    text-align: center;
+}
+footer nav ul li {
+    display: inline;
+}
+footer nav ul li a {
+    color: #C4C4C4;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 0 14px;
+    text-transform: uppercase;
+}
+footer nav ul li a.current {
+    border-bottom: 1px solid #C4C4C4;
+}
+footer nav ul li a:hover {
+    color: white;
+}
+footer nav ul li a img {
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+}
+.jScrollPaneContainer {
+    overflow: hidden;
+    padding-right: 15px;
+    position: relative;
+    z-index: 1;
+}
+.jScrollPaneTrack {
+    background: none repeat scroll 0 0 #AAAAAA;
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.jScrollPaneDrag {
+    background: none repeat scroll 0 0 #666666;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+}
+.jScrollPaneDragTop {
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+.jScrollPaneDragBottom {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+}
+a.jScrollArrowUp {
+    display: block;
+    height: 9px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-indent: -2000px;
+    top: 0;
+    z-index: 1;
+}
+a.jScrollArrowUp:hover {
+}
+a.jScrollArrowDown {
+    bottom: 0;
+    display: block;
+    height: 9px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-indent: -2000px;
+    z-index: 1;
+}
+a.jScrollArrowDown:hover {
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+}
+
